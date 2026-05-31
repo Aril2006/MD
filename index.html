@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DH16G5Q7KW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-DH16G5Q7KW');
+    </script>
+        
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta name="color-scheme" content="dark">
@@ -11,16 +19,16 @@
     <meta name="keywords" content="MODORA, mod apk, unduh game mod, aplikasi premium gratis, download apk mod, game android">
     <meta name="author" content="MODORA Official Inc.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://modorazone.com">
+    <link rel="canonical" href="https://modora.my.id">
     
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://modorazone.com/">
+    <meta property="og:url" content="https://modora.my.id/">
     <meta property="og:title" content="MODORA - Unduh Apps & Games MOD APK">
     <meta property="og:description" content="Platform terbaik untuk unduh aplikasi dan game MOD APK gratis, aman, dan versi terbaru untuk Android.">
     <meta property="og:image" content="/modora.png">
 
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://modorazone.com/">
+    <meta property="twitter:url" content="https://modora.my.id/">
     <meta property="twitter:title" content="MODORA - Unduh Apps & Games MOD APK">
     <meta property="twitter:description" content="Platform terbaik untuk unduh aplikasi dan game MOD APK gratis, aman, dan versi terbaru untuk Android.">
     <meta property="twitter:image" content="/modora.png">
@@ -35,10 +43,10 @@
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "MODORA",
-      "url": "https://modorazone.com",
+      "url": "https://modora.my.id",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://modorazone.com/?q={search_term_string}",
+        "target": "https://modora.my.id/?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     }
@@ -138,59 +146,16 @@
             transition: background-color 0.25s ease, border-color 0.25s ease;
         }
 
-        .logo { font-size: 24px; font-weight: 800; background: linear-gradient(90deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -0.5px; cursor: pointer; flex-shrink: 0; }
+        .logo { font-size: 24px; font-weight: 800; background: linear-gradient(90deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -0.5px; cursor: pointer; }
         
-        .search-wrap { flex: 1; margin: 0 10px; position: relative; max-width: 400px; display: flex; min-width: 0; }
-        .search-input { width: 100%; min-width: 0; padding: 10px 40px 10px 15px; border-radius: 12px; border: none; background: var(--search-bg); color: var(--text-main); font-size: 14px; transition: background-color 0.25s ease, box-shadow 0.25s ease; font-weight: 500; }
+        .search-wrap { flex: 1; margin: 0 15px; position: relative; max-width: 400px; }
+        .search-input { width: 100%; padding: 10px 40px 10px 15px; border-radius: 12px; border: none; background: var(--search-bg); color: var(--text-main); font-size: 14px; transition: background-color 0.25s ease, box-shadow 0.25s ease; font-weight: 500; }
         .search-input:focus { box-shadow: 0 0 0 2px var(--primary); background: var(--bg-card); }
         .search-input::placeholder { color: var(--text-muted); font-weight: 400; }
         .search-icon { position: absolute; right: 15px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 14px; pointer-events: none; }
         
-        .btn-tele { width: 40px; height: 40px; background: #29b6f6; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; text-decoration: none; transition: transform 0.2s; box-shadow: 0 4px 10px rgba(41, 182, 246, 0.3); flex-shrink: 0; }
+        .btn-tele { width: 40px; height: 40px; background: #29b6f6; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; text-decoration: none; transition: transform 0.2s; box-shadow: 0 4px 10px rgba(41, 182, 246, 0.3); }
         .btn-tele:active { transform: scale(0.9); }
-
-        /* --- AD BLOCKS CSS --- */
-        .ad-block {
-            background: var(--bg-card);
-            border: 1px dashed var(--border);
-            border-radius: var(--radius);
-            margin: 25px auto;
-            padding: 20px 10px 10px 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: var(--shadow);
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            text-align: center;
-            gap: 15px;
-            transition: border-color 0.3s ease;
-        }
-        .ad-block:hover { border-color: var(--primary); }
-        .ad-block::before {
-            content: 'SPONSORED';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--search-bg);
-            color: var(--text-muted);
-            font-size: 9px;
-            font-weight: 800;
-            padding: 3px 12px;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            letter-spacing: 1px;
-            z-index: 2;
-        }
-        .ad-flex-row { flex-direction: row; flex-wrap: wrap; align-items: flex-start; }
-        .ad-mobile-only { display: block; width: 100%; display: flex; justify-content: center; }
-        .ad-desktop-only { display: none; width: 100%; justify-content: center; }
-        @media (min-width: 768px) {
-            .ad-mobile-only { display: none; }
-            .ad-desktop-only { display: flex; }
-        }
 
         @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
         .skeleton { background: var(--skeleton-grad); background-size: 200% 100%; animation: shimmer 1.5s infinite linear; border-radius: 8px; }
@@ -217,18 +182,6 @@
         .recom-wrap::-webkit-scrollbar { display: none; }
         .recom-scroll { display: flex; gap: 15px; width: max-content; padding-right: 15px; }
 
-        /* --- SCROLL ANIMATIONS --- */
-        .scroll-wait {
-            opacity: 0;
-            transform: translateY(30px) scale(0.96);
-            transition: opacity 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            will-change: opacity, transform;
-        }
-        .scroll-wait.scrolled-in {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-        }
-
         .trend-card {
             width: 300px; height: 165px; border-radius: 24px; background: var(--bg-card);
             border: 1px solid var(--card-border); position: relative; overflow: hidden;
@@ -238,20 +191,12 @@
             flex-shrink: 0;
         }
         .trend-card:active { transform: scale(0.96); }
-        .trend-bg { position: absolute; right: -25px; bottom: -25px; width: 150px; opacity: 0; filter: blur(5px); transform: rotate(-15deg); pointer-events: none; transition: opacity 0.5s ease; }
+        .trend-bg { position: absolute; right: -25px; bottom: -25px; width: 150px; opacity: 0.5; filter: blur(5px); transform: rotate(-15deg); pointer-events: none; }
         .trend-badge { position: absolute; top: 16px; right: 16px; background: var(--primary); color: white; font-size: 10px; padding: 5px 12px; border-radius: 20px; font-weight: 800; z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.2); text-transform: uppercase; letter-spacing: 0.5px; }
         .trend-name { font-size: 20px; font-weight: 800; width: 85%; line-height: 1.3; margin-bottom: 6px; z-index: 2; position: relative; letter-spacing: -0.5px; }
         .trend-act { font-size: 13px; color: var(--text-muted); font-weight: 600; z-index: 2; position: relative; }
 
-        /* --- LIST ENTRANCE ANIMATION --- */
-        @keyframes listSlideIn {
-            0% { opacity: 0; transform: translateY(30px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        .list-container { 
-            width: 100%; display: grid; gap: 14px; min-height: 100px; 
-            animation: listSlideIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        }
+        .list-container { width: 100%; display: grid; gap: 14px; min-height: 100px; }
         .list-container.view-list { grid-template-columns: 1fr; }
         .list-container.view-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; align-items: start; }
 
@@ -270,17 +215,7 @@
         .view-grid .clean-card .btn-unduh { width: 100%; margin-top: auto; padding: 10px; }
 
         .icon-wrap { position: relative; width: 60px; height: 60px; flex-shrink: 0; }
-        
-        /* --- SPINNER & ICON CSS --- */
-        .img-spinner {
-            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-            font-size: 20px; color: var(--primary); z-index: 1;
-        }
-        .clean-icon { 
-            width: 100%; height: 100%; border-radius: 16px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.08); 
-            background-color: var(--border); pointer-events: none; opacity: 0; position: relative; z-index: 2; transition: opacity 0.4s ease, background-color 0.25s ease; 
-        }
-        
+        .clean-icon { width: 100%; height: 100%; border-radius: 16px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.08); background-color: var(--border); pointer-events: none; transition: background-color 0.25s ease; }
         .mod-label {
             position: absolute; bottom: -5px; right: -5px; background: var(--accent); color: white;
             font-size: 9px; font-weight: 800; padding: 3px 6px; border-radius: 8px; 
@@ -435,35 +370,7 @@
     </header>
 
     <main id="mainView">
-        
-        <div class="ad-block scroll-wait">
-            <div class="ad-mobile-only">
-                <script>
-                  atOptions = {
-                    'key' : '1902937aed87c10c4f76d340f268e249',
-                    'format' : 'iframe',
-                    'height' : 50,
-                    'width' : 320,
-                    'params' : {}
-                  };
-                </script>
-                <script src="https://www.highperformanceformat.com/1902937aed87c10c4f76d340f268e249/invoke.js"></script>
-            </div>
-            <div class="ad-desktop-only">
-                <script>
-                  atOptions = {
-                    'key' : 'd419fe4762307d421abe5d3fb81c079d',
-                    'format' : 'iframe',
-                    'height' : 60,
-                    'width' : 468,
-                    'params' : {}
-                  };
-                </script>
-                <script src="https://www.highperformanceformat.com/d419fe4762307d421abe5d3fb81c079d/invoke.js"></script>
-            </div>
-        </div>
-
-        <section id="section-recom" class="scroll-wait">
+        <section id="section-recom">
             <div class="section-head" id="t-recom"><i class="fa-solid fa-wand-magic-sparkles recom-icon"></i> Recommended</div>
             <div class="recom-wrap"><div class="recom-scroll" id="recomContainer">
                 <div class="skeleton skel-trend"></div>
@@ -471,13 +378,8 @@
                 <div class="skeleton skel-trend"></div>
             </div></div>
         </section>
-
-        <div class="ad-block scroll-wait">
-            <script async="async" data-cfasync="false" src="https://pl29596142.effectivecpmnetwork.com/3f2ba9e0fe7c4a2a23804ab07d8ecaac/invoke.js"></script>
-            <div id="container-3f2ba9e0fe7c4a2a23804ab07d8ecaac"></div>
-        </div>
         
-        <section id="section-games" class="scroll-wait">
+        <section id="section-games">
             <div class="section-head" id="t-games"><i class="fa-solid fa-gamepad games-icon"></i> Games</div>
             <div class="list-container view-list" id="gamesContainer">
                 <div class="skel-card"><div class="skeleton skel-icon"></div><div class="skel-info"><div class="skeleton skel-line"></div><div class="skeleton skel-line short"></div></div><div class="skeleton skel-btn"></div></div>
@@ -485,35 +387,8 @@
             </div>
             <div class="btn-loadmore hidden" id="btnMoreGames" onclick="loadMoreGames()"><span id="t-showMoreGames">Show More</span> <i class="fa-solid fa-chevron-down"></i></div>
         </section>
-
-        <div class="ad-block scroll-wait">
-            <div class="ad-mobile-only">
-                <script>
-                  atOptions = {
-                    'key' : '0814d059a0d972ed9f46b94fff7505bb',
-                    'format' : 'iframe',
-                    'height' : 250,
-                    'width' : 300,
-                    'params' : {}
-                  };
-                </script>
-                <script src="https://www.highperformanceformat.com/0814d059a0d972ed9f46b94fff7505bb/invoke.js"></script>
-            </div>
-            <div class="ad-desktop-only">
-                <script>
-                  atOptions = {
-                    'key' : '7f6d248e33cb7aa3a5c5ba779038121d',
-                    'format' : 'iframe',
-                    'height' : 90,
-                    'width' : 728,
-                    'params' : {}
-                  };
-                </script>
-                <script src="https://www.highperformanceformat.com/7f6d248e33cb7aa3a5c5ba779038121d/invoke.js"></script>
-            </div>
-        </div>
         
-        <section id="section-apps" class="scroll-wait">
+        <section id="section-apps">
             <div class="section-head" id="t-apps"><i class="fa-solid fa-grip apps-icon"></i> Apps</div>
             <div class="list-container view-list" id="appsContainer">
                 <div class="skel-card"><div class="skeleton skel-icon"></div><div class="skel-info"><div class="skeleton skel-line"></div><div class="skeleton skel-line short"></div></div><div class="skeleton skel-btn"></div></div>
@@ -521,33 +396,6 @@
             </div>
             <div class="btn-loadmore hidden" id="btnMoreApps" onclick="loadMoreApps()"><span id="t-showMoreApps">Show More</span> <i class="fa-solid fa-chevron-down"></i></div>
         </section>
-
-        <div class="ad-block ad-flex-row scroll-wait">
-            <div>
-                <script>
-                  atOptions = {
-                    'key' : 'fecce84e389387c7b6bc4b773f285376',
-                    'format' : 'iframe',
-                    'height' : 300,
-                    'width' : 160,
-                    'params' : {}
-                  };
-                </script>
-                <script src="https://www.highperformanceformat.com/fecce84e389387c7b6bc4b773f285376/invoke.js"></script>
-            </div>
-            <div>
-                <script>
-                  atOptions = {
-                    'key' : 'ec4945241f74477f3ab6286b4ca4d375',
-                    'format' : 'iframe',
-                    'height' : 600,
-                    'width' : 160,
-                    'params' : {}
-                  };
-                </script>
-                <script src="https://www.highperformanceformat.com/ec4945241f74477f3ab6286b4ca4d375/invoke.js"></script>
-            </div>
-        </div>
         
         <footer class="footer">© <span id="year"></span> MODORA | All Rights Reserved</footer>
     </main>
@@ -718,22 +566,6 @@
         let showGamesCount = 10;
         let isDataLoaded = false;
 
-        // --- INTERSECTION OBSERVER UNTUK ANIMASI SCROLL ---
-        const scrollObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting) {
-                    entry.target.classList.add('scrolled-in');
-                    scrollObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -20px 0px' });
-
-        function triggerScrollAnimations() {
-            setTimeout(() => {
-                document.querySelectorAll('.scroll-wait:not(.scrolled-in)').forEach(el => scrollObserver.observe(el));
-            }, 50);
-        }
-
         function getBaseName(name) {
             let n = name.toLowerCase();
             n = n.replace(/v\d+(\.\d+)*/g, '');
@@ -809,7 +641,6 @@
             renderRecom();
             renderLists();
             updateNavBadges();
-            triggerScrollAnimations();
         }
 
         function updateNavBadges() {
@@ -861,12 +692,11 @@
             
             shuffled.forEach(item => {
                 html += `
-                <div class="trend-card scroll-wait" onclick="openLink('${item.link}')">
+                <div class="trend-card" onclick="openLink('${item.link}')">
                     <span class="trend-badge">MOD</span>
                     <div class="trend-name">${item.name}</div>
                     <div class="trend-act">${t('getNow')} <i class="fa-solid fa-arrow-right"></i></div>
-                    <div class="img-spinner" style="position:absolute; right:35px; bottom:30px; font-size:24px; z-index:1;"><i class="fa-solid fa-circle-notch fa-spin"></i></div>
-                    <img src="${item.img}" class="trend-bg" loading="lazy" onload="this.previousElementSibling.style.display='none'; this.style.opacity=0.5;" onerror="this.previousElementSibling.style.display='none'; this.style.opacity=0">
+                    <img src="${item.img}" class="trend-bg" loading="lazy" onerror="this.style.opacity=0">
                 </div>`;
             });
             
@@ -875,12 +705,10 @@
         }
 
         function createCardHtml(item) {
-            let iconHtml = `
-                <div class="img-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i></div>
-                <img src="${item.img}" class="clean-icon" loading="lazy" onload="this.previousElementSibling.style.display='none'; this.style.opacity=1;" onerror="this.previousElementSibling.style.display='none'; this.src='https://via.placeholder.com/70?text=IMG'; this.style.opacity=1;">`;
+            let iconHtml = `<img src="${item.img}" class="clean-icon" loading="lazy" onerror="this.src='https://via.placeholder.com/70?text=IMG'">`;
 
             return `
-            <div class="clean-card scroll-wait" onclick="openLink('${item.link}')">
+            <div class="clean-card" onclick="openLink('${item.link}')">
                 <div class="icon-wrap">
                     ${iconHtml}
                     <div class="mod-label">MOD</div>
@@ -919,7 +747,6 @@
                 cApps.innerHTML = hApps;
                 document.getElementById('btnMoreApps').classList.toggle('hidden', showAppsCount >= dbApps.length);
             }
-            triggerScrollAnimations();
         }
 
         function loadMoreApps() { showAppsCount += 10; renderLists(); }
@@ -960,7 +787,6 @@
             fApps.forEach(item => hApp += createCardHtml(item));
             document.getElementById('appsContainer').innerHTML = hApp || `<div class="status-msg">${t('noApps')}</div>`;
             document.getElementById('btnMoreApps').classList.add('hidden');
-            triggerScrollAnimations();
         }
 
         function toggleSet() { document.getElementById('modalSet').classList.toggle('active'); }
